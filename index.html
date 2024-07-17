@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Document Viewer</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Online Document Viewer</h1>
+        <div class="upload-container" id="uploadContainer">
+            <p>Drag & Drop your document here or <button id="browseButton">Browse</button></p>
+            <input type="file" id="fileInput" accept=".pdf" style="display: none;">
+        </div>
+        <div class="controls" id="controls">
+            <button id="zoomIn">Zoom In</button>
+            <button id="zoomOut">Zoom Out</button>
+            <button id="fullscreen">Fullscreen</button>
+            <button id="darkMode">Dark Mode</button>
+        </div>
+        <div class="viewer" id="viewer">
+            <iframe id="documentViewer" src="" frameborder="0"></iframe>
+        </div>
+        <div class="loading" id="loading">Loading...</div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
